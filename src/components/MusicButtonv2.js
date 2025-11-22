@@ -1,8 +1,5 @@
-import React from "react";
 import styled from "styled-components";
 import SpeakerIcon from "../assets/icons/speaker.png";
-import { useSelector, useDispatch } from 'react-redux';
-import { play, next } from './redux/musicSlice';
 import '../assets/fonts/font-Pkmn.css';
 import IntroBattleMusic from "../assets/music/intro-battle-music.mp3";
 
@@ -42,28 +39,28 @@ img {
 `;
 
 const MusicCard = () => {
-    const current = useSelector((state) => state.music.play)
+/*     const current = useSelector((state) => state.music.play)
     const name = useSelector((state) => state.music.currentMusic)
-    const dispatch = useDispatch()
+    const dispatch = useDispatch() */
 
     return (    
      <Container>
         <div>
             <button onClick={() => {
                 let audio = Audio(IntroBattleMusic); 
-                if(!current){
+                /* if(!current){
                     audio.play();
                     dispatch(play())
                     dispatch(next())
                 } else if (current) {
                     audio.pause()
                     dispatch(play())
-                }
+                } */
             }}>
                 <img alt="speaker" width="25px"height="25px" src={SpeakerIcon} />
             </button>
         </div>
-        <span>Playing {name}</span>
+        <span>Playing </span>
     </Container>    
     );
   }

@@ -1,8 +1,5 @@
-import React, {useEffect} from "react";
 import styled from "styled-components";
 import SpeakerIcon from "../assets/icons/speaker.png";
-import { useSelector, useDispatch } from 'react-redux';
-import { changeName } from './redux/counterSlice';
 import '../assets/fonts/font-Pkmn.css';
 
 
@@ -54,8 +51,7 @@ const Button = styled.div`
 let music
 
 const MusicButton = (props) => {
-    const name = useSelector((state) => state.counter.name)
-    const dispatch = useDispatch()
+    const name = ''
 
     music = props.audio
 
@@ -76,7 +72,6 @@ const MusicButton = (props) => {
         <Button> 
             <button onClick={() => {
                 PlayMusic(music)
-                dispatch(changeName())
                 }}>
                 <img alt="speaker" width="25px"height="25px" src={SpeakerIcon} />
                 <span>{name}</span>
