@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "ignoreDeprecations": "5.0",
-    "target": "es5",
-    "lib": ["es2015", "dom"],
+    "moduleResolution": "node",
+    "baseUrl": "src/",
+    "ignoreDeprecations": "6.0",
+    "target": "es6",
+    "lib": ["ES2020", "dom"],
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "../../built/local/tsc.js",
+    "esModuleInterop": true,
     "sourceMap": true
   },
   "include": ["src/**/*.tsx", "src/**/*.ts"],
