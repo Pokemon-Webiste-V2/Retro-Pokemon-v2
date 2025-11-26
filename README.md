@@ -1,5 +1,3 @@
-
-
 ### `All extension added
 
 - react
@@ -7,18 +5,18 @@
 - react router
 
 ### TODO from the previous version
+
 // Login Form  
 // connect Login Form with MongoDB
 // Setup Unit testing Jest
-// Pokedex page Finish 
+// Pokedex page Finish
 // API connection finish - done
 // Refactor all the code
 // Refactor asset placement and imports
 // setup Next.js
-// setup Docker 
-// refactor Components 
+// setup Docker
+// refactor Components
 // add assets and timeline to games page
- 
 
 ### `API to use
 

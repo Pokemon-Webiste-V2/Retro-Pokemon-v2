@@ -1,85 +1,67 @@
 {
-    "games":[
-        {
-            "title": "Red, Blue & Green",
-            "image": "",
-            "releaseY": 1996,
-            "gen": 1,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Gold & Silver",
-            "image": "",
-            "releaseY": 1999,
-            "gen": 2,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Ruby & Sapphire",
-            "image": "",
-            "releaseY": 2002,
-            "gen": 3,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Diamond & Pearl",
-            "image": "",
-            "releaseY": 2006,
-            "gen": 4,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Black & White",
-            "image": "",
-            "releaseY": 2010,
-            "gen": 5,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "X&Y",
-            "image": "",
-            "releaseY": 2013,
-            "gen": 6,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Sun & Moon",
-            "image": "",
-            "releaseY": 2016,
-            "gen": 7,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Sword & Shield",
-            "image": "",
-            "releaseY": 2019,
-            "gen": 8,
-            "info": [
-
-            ]
-        },
-        {
-            "title": "Scarlet & Violet",
-            "image": "",
-            "releaseY": 2022,
-            "gen": 9,
-            "info": [
-
-            ]
-        }
-    ]
+  "games": [
+    {
+      "title": "Red, Blue & Green",
+      "image": "",
+      "releaseY": 1996,
+      "gen": 1,
+      "info": []
+    },
+    {
+      "title": "Gold & Silver",
+      "image": "",
+      "releaseY": 1999,
+      "gen": 2,
+      "info": []
+    },
+    {
+      "title": "Ruby & Sapphire",
+      "image": "",
+      "releaseY": 2002,
+      "gen": 3,
+      "info": []
+    },
+    {
+      "title": "Diamond & Pearl",
+      "image": "",
+      "releaseY": 2006,
+      "gen": 4,
+      "info": []
+    },
+    {
+      "title": "Black & White",
+      "image": "",
+      "releaseY": 2010,
+      "gen": 5,
+      "info": []
+    },
+    {
+      "title": "X&Y",
+      "image": "",
+      "releaseY": 2013,
+      "gen": 6,
+      "info": []
+    },
+    {
+      "title": "Sun & Moon",
+      "image": "",
+      "releaseY": 2016,
+      "gen": 7,
+      "info": []
+    },
+    {
+      "title": "Sword & Shield",
+      "image": "",
+      "releaseY": 2019,
+      "gen": 8,
+      "info": []
+    },
+    {
+      "title": "Scarlet & Violet",
+      "image": "",
+      "releaseY": 2022,
+      "gen": 9,
+      "info": []
+    }
+  ]
 }

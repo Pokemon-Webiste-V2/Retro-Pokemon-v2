@@ -1,7 +1,7 @@
-import MuteIcon from "./mute.png";
-import SpeakerIcon from "./speaker.png";
+import MuteIcon from './mute.png';
+import SpeakerIcon from './speaker.png';
 
 export const icons = {
-    MuteIcon,
-    SpeakerIcon,
-}
+  MuteIcon,
+  SpeakerIcon,
+};
