@@ -1,28 +1,27 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.ul`
-width:500px;
-height:100%;
-display:flex;
-flex-direction: column;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
-h1 {
-color: #acacacff;
-font-Size: 40px;
-}
+  h1 {
+    color: #acacacff;
+    font-size: 40px;
+  }
 
-p {
-font-Size: 20px;
-}
-
+  p {
+    font-size: 20px;
+  }
 `;
 
 export default function TextHolder(props: any) {
-    return (    
-     <Container style={props?.style}>
-            <h1>{props?.title}</h1>
-           <p>{props?.paragraph}</p>
-    </Container>    
-    );
-  }
+  return (
+    <Container style={props?.style}>
+      <h1>{props?.title}</h1>
+      <p>{props?.paragraph}</p>
+    </Container>
+  );
+}
