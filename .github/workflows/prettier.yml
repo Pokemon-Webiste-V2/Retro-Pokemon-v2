@@ -1,15 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-name: front-linter
-# Controls when the workflow will run
+name: prettier-linter-run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main", "dev" ]
   pull_request:
     branches: [ "main", "dev" ]
-# Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -24,6 +19,6 @@ jobs:
       - name: install
         run: npm install
       - name: ESLint
-        run: npm run fix .
+        run: npm run ci:eslint
       - name: Prettier
-        run: npm prettier --write .
+        run: npm run ci:prettier
