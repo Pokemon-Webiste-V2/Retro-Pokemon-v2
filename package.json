@@ -20,7 +20,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write ."
+    "prettier:write": "prettier --write .",
+    "eslint:check": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "ci:prettier": "prettier --write .",
+    "ci:eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "eslintConfig": {
     "extends": [
