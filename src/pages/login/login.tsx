@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
 const Body = styled.div`
@@ -21,7 +20,6 @@ const CenterBody = styled.div`
 export default function Login() {
   return (
     <Body>
-      <Navbar isLogin={true} />
       <Title>Login</Title>
       <CenterBody>
         <LoginForm />

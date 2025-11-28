@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
-import Footer from '../../components/Footer/Footer';
 import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import TextHolder from '../../components/TextHolder/TextHolder';
 import { images } from 'assets/images/general';
-import GameBoy from '../assets/images/gameboy-color.png';
 import MusicCard from '../../components/MusicButton/v2/MusicButtonv2';
 
 const Body = styled.div`
@@ -44,7 +41,6 @@ const paragraphText =
 export default function Home() {
   return (
     <Body>
-      <Navbar></Navbar>
       <MusicCard />
       <Title>Welcome to Retro Pokemon</Title>
       <FirstBody>
@@ -64,7 +60,6 @@ export default function Home() {
           height="500px"
         ></ImageHolder>
       </SecondBody>
-      <Footer />
     </Body>
   );
 }

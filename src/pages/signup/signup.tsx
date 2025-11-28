@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 import SignUpForm from '../../components/SignupForm/SignUpForm';
 import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import { images } from 'assets/images/general';
@@ -41,7 +40,6 @@ height:100%;
 export default function Signup() {
   return (
     <Body>
-      <Navbar />
       <Title>SignUp</Title>
       <CenterBody>
         <LeftBody>

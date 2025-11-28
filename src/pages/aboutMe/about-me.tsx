@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 
 const Body = styled.div`
   background-color: black;
@@ -21,7 +20,6 @@ const CenterBody = styled.div`
 export default function AboutMe() {
   return (
     <Body>
-      <Navbar />
       <Title>About Me Page</Title>
       <CenterBody></CenterBody>
     </Body>

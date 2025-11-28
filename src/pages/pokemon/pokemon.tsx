@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 import { useLocation } from 'react-router-dom';
 import fetcher from '../../backend/fetcher';
 
@@ -39,7 +38,6 @@ export default function Pokemon() {
 
   return (
     <Body>
-      <Navbar></Navbar>
       <CentralBody>
         <Image></Image>
         <Details>
