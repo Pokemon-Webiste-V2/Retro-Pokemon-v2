@@ -1,60 +1,54 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+import '../NavBar/Navbar.css';
+import data from '../NavBar/data.json'
+import { images } from '../../assets/images/general/index'
 //import '../assets/fonts/font-Pkmn.css';
 import { Link } from 'react-router-dom';
 
-const Container = styled.ul`
-  height: 50px;
-  margin: 0% 1% 1% 1%;
-  list-style-type: none;
-  overflow: hidden;
+interface LinkItem {
+  text: string;
+  direction: string;
+}
 
-  li {
-    display: inline-flex;
-    justify-content: flex-start;
-  }
-  li:last-child {
-    border: 2px solid #c7a008ff;
-    float: right;
-  }
-  li:hover {
-    background-color: white;
-  }
-  a {
-    color: #acacacff;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
-  }
-`;
+export default function Navbar() {
+  const [links] = useState<LinkItem[]>(data.pages);
+  const [isLogin, setIsLogin] = useState<boolean>(false);
 
-export default function Navbar(props: any) {
+  function handleLogin() {
+    if (isLogin) {
+      setIsLogin(false);
+    } else {
+      setIsLogin(true);
+    }
+  }
+
   return (
-    <Container>
-      <li>
-        <Link to="/Retro-Pkm">Home</Link>
-      </li>
-      <li>
-        <Link to="/pokedex">Pokedex</Link>
-      </li>
-      <li>
-        <Link to="/games">Games</Link>
-      </li>
-      <li>
-        <Link to="/about-me">About Me</Link>
-      </li>
-      <li>
-        <Link to="/signup">Signup</Link>
-      </li>
-      {props.isLogin ? (
-        ''
-      ) : (
-        <li>
-          <Link style={{ color: 'white' }} to="/login">
-            Login
-          </Link>
-        </li>
-      )}
-    </Container>
+    <div className='navbar-body'>
+      <div className='navbar-logo'>
+        <img src={images.Logo} alt="Logo" />
+      </div>
+      <div className='navbar-divider'>
+        <ul className='navbar-list' >
+          {links.map((item, index) => 
+          <li key={index}>
+            <Link to={item.direction}>{item.text}</Link>
+          </li>
+        )}
+      </ul>
+      </div>
+      <div className='navbar-login'>
+        {isLogin ? 
+        <div className='navbar-login-button'>
+          <button onClick={handleLogin}>
+            <Link to="/profile">Profile</Link>
+          </button>
+        </div> : 
+        <div className='navbar-login-button'>
+          <button onClick={handleLogin}>
+            <Link to="/login">Login</Link>
+          </button>
+        </div>}
+      </div>
+    </div>
   );
 }

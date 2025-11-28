@@ -1,0 +1,24 @@
+ {
+    "pages": [
+        {
+            "text":"Home",
+            "direction": "/"
+        },
+        {
+            "text":"Pokedex",
+            "direction": "/pokedex"
+        },
+        {
+            "text":"About Me",
+            "direction": "/about-me"
+        },
+        {
+            "text":"Games",
+            "direction": "/games"
+        }, 
+        {
+            "text":"Signup",
+            "direction": "/signup"
+        }
+    ]
+}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import MusicButton from '../../components/MusicButton/v1/MusicButton';
 import Card from '../../components/Card/Card';
@@ -54,7 +53,6 @@ export default function Pokedex() {
 
   return (
     <Body>
-      <Navbar />
       <MusicButton audio={music.GymLeaderBattle} name={'Gym Battle'} />
       <Title>Retro Pokedex</Title>
       <CenterBody>

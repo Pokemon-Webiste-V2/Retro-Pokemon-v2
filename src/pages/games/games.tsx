@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../../components/NavBar/Navbar';
 import Timeline from '../../components/Timeline/Timeline';
 
 const Body = styled.div`
@@ -23,7 +22,6 @@ const CenterBody = styled.div`
 export default function Games() {
   return (
     <Body>
-      <Navbar />
       <Title>Timetable of the Games</Title>
       <CenterBody>
         <Timeline />
