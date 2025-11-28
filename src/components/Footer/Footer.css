@@ -1,0 +1,37 @@
+.footer-container {
+    display: flex;
+    background-color:black;
+    border: 2px solid #c7a008ff;
+}
+
+.footer-first-div, .footer-second-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+
+ a {
+    color: #acacacff;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    font-family: 'Pkmn', Times, serif;
+  }
+p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Pkmn', Times, serif;
+  }
+}
+
+.footer-third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  p {
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-family: 'Pkmn', Times, serif;
+  }
+}
