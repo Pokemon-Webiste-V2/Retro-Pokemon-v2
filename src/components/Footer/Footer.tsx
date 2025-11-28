@@ -1,67 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  display: flex;
-`;
-
-const FirstBody = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 40px;
-
-  a {
-    color: #acacacff;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
-  }
-`;
-
-const SecondBody = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 40px;
-
-  a {
-    color: #acacacff;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
-  }
-`;
-
-const ThirdBody = styled.div`
-  width: 100%;
-  display: flex;
-  float: right;
-  justify-content: flex-end;
-  padding: 70px 20px 0 0;
-
-  p {
-    color: white;
-    padding: 10px 10px 10px 10px;
-    font-size: 15px;
-    font-family: 'Pkmn', Times, serif;
-  }
-`;
+import '../Footer/Footer.css';
 
 export default function Footer() {
   return (
-    <Container>
-      <FirstBody>
-        <a>Hello</a>
-        <a>Hello</a>
-      </FirstBody>
-      <SecondBody>
-        <a>Hello</a>
-        <a>Hello</a>
-      </SecondBody>
-      <ThirdBody>
+    <div className='footer-container'>
+      <div className='footer-first-div'>
+        <p>Other Links</p>
+        <a href='https://www.serebii.net/'>Serebii</a>
+        <a href='https://bulbapedia.bulbagarden.net/wiki/Main_Page'>Bulbapedia</a>
+      </div>
+      <div className='footer-second-div'>
+        <p>Other Links</p>
+        <a href='https://pokemonshowdown.com/'>Pokemon ShowDown</a>
+        <a href='https://pokemondb.net/'>Pokemon DB</a>
+      </div>
+      <div className='footer-third-div'>
         <p>Pokemon is of ©The Pokemon Company</p>
-      </ThirdBody>
-    </Container>
+      </div>
+    </div>
   );
 }
