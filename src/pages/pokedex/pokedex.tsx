@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ImageHolder from '../../components/ImageHolder/ImageHolder';
-import MusicButton from '../../components/MusicButton/v1/MusicButton';
 import Card from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination';
 import { images } from 'assets/images/general';
-import { music } from 'assets/music';
 import fetcher from '../../backend/fetcher';
 import { Link } from 'react-router-dom';
 
@@ -53,7 +51,6 @@ export default function Pokedex() {
 
   return (
     <Body>
-      <MusicButton audio={music.GymLeaderBattle} name={'Gym Battle'} />
       <Title>Retro Pokedex</Title>
       <CenterBody>
         <ImageHolder

@@ -4,6 +4,7 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 
 const Body = styled.div`
   padding: 30px 0 0 0;
+  height: 85vh;
 `;
 const Title = styled.h1`
   display: flex;
