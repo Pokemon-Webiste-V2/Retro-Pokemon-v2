@@ -8,7 +8,7 @@ const Container = styled.ul`
   flex-direction: column;
 
   h1 {
-    color: #acacacff;
+    color: #c7a008;
     font-size: 40px;
   }
 

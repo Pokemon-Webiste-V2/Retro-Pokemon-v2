@@ -1,65 +1,42 @@
 import React from 'react';
-import styled from 'styled-components';
-import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import TextHolder from '../../components/TextHolder/TextHolder';
 import { images } from 'assets/images/general';
-import MusicCard from '../../components/MusicButton/v2/MusicButtonv2';
-
-const Body = styled.div`
-  height: 100%;
-  background-color: black;
-  padding: 30px 0 0 0;
-`;
-const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  color: #c7a008;
-  font-size: 40px;
-  font-family: 'Pkmn', Times, serif;
-`;
-const FirstBody = styled.div`
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-`;
-
-const SecondBody = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #ffffffff;
-  padding: 2% 0 1% 0;
-
-  img {
-    margin: 1%;
-  }
-`;
+import '../home/home.css';
 
 const paragraphText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+  `This project was born from a love of classic Game Boy adventures and the charm of their simple,
+   pixel-driven worlds, inspiring the idea to reimagine that nostalgia as an online Pokémon-style arcade experience. What began as a small experiment quickly grew into a full creative challenge, blending retro aesthetics with modern multiplayer systems to see how old-school design could meet contemporary web technology. Along the way, it became a personal sandbox for sharpening software-development skills—from game logic and animation to networking, UI design, and scalable architecture—while staying true to the warm, familiar feel of vintage handheld games. The result is both a tribute to childhood favorites and a
+   practical journey in learning, adapting, and expanding technical abilities through a project built with curiosity and passion.`;
 
 export default function Home() {
   return (
-    <Body>
-      <MusicCard />
-      <Title>Welcome to Retro Pokemon</Title>
-      <FirstBody>
-        <ImageHolder
+    <div className='homepage-body'>
+      <div className='first-body'>
+        <div>
+          <h1 className='title'>Welcome to Retro Pokemon</h1>
+        </div>
+        <div className='image-holder'>
+           <img
           src={images.IntroBattle}
           alt="Pokemon Intro"
           width="400px"
           height="368px"
-        ></ImageHolder>
-      </FirstBody>
-      <SecondBody>
+        />
+        </div>
+        <div>
+          <h3 className='subtitle'>Step into a retro-styled Pokémon battleground where classic
+            arcade vibes meet real-time online battles. Challenge players worldwide and prove you’re the ultimate trainer.</h3>
+        </div>
+      </div>
+      <div className='second-body'>
         <TextHolder title="Introducing the Idea" paragraph={paragraphText} />
-        <ImageHolder
+        <img
           src={images.GameBoy}
           alt="Gameboy"
           width="290px"
           height="500px"
-        ></ImageHolder>
-      </SecondBody>
-    </Body>
+        />
+      </div>
+    </div>
   );
 }
