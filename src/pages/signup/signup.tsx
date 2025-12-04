@@ -5,7 +5,7 @@ import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import { images } from 'assets/images/general';
 
 const Body = styled.div`
-  padding: 30px 0 0 0;
+  height: 100vh;
 `;
 const Title = styled.h1`
   display: flex;
@@ -24,6 +24,7 @@ const LeftBody = styled.div`
   margin: 1%;
   border: 4px solid black;
   width: 75%;
+  height: ;
 
   @media (max-width: 1368px) {
     width: 0%;

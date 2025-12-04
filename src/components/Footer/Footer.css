@@ -24,10 +24,15 @@ p {
 }
 
 .footer-third-div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-third-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
+ 
   p {
     color: white;
     padding: 10px 10px 10px 10px;

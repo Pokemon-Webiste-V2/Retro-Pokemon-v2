@@ -15,11 +15,7 @@ export default function Navbar() {
   const [isLogin, setIsLogin] = useState<boolean>(false);
 
   function handleLogin() {
-    if (isLogin) {
-      setIsLogin(false);
-    } else {
-      setIsLogin(true);
-    }
+    
   }
 
   return (

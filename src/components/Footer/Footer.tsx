@@ -15,7 +15,9 @@ export default function Footer() {
         <a href='https://pokemondb.net/'>Pokemon DB</a>
       </div>
       <div className='footer-third-div'>
-        <p>Pokemon is of ©The Pokemon Company</p>
+        <div className='footer-third-content'>
+          <p>Pokemon is of ©The Pokemon Company</p>
+        </div>
       </div>
     </div>
   );

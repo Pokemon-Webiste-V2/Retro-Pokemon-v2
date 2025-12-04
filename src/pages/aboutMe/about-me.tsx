@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Body = styled.div`
   background-color: black;
+  height: 100vh;
   padding: 30px 0 0 0;
 `;
 const Title = styled.h1`
