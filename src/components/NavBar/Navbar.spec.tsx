@@ -8,7 +8,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const logo = screen.getByAltText(/logo/i);
@@ -19,7 +19,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     // mapping.json contains these labels, ensure they are rendered
@@ -34,7 +34,7 @@ describe('Navbar component', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     // initially should contain "Login"

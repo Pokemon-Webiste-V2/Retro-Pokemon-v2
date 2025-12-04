@@ -1,6 +1,7 @@
 import App from './App';
 //import reportWebVitals from './reportWebVitals';
 import './index.css';
+import '../src/assets/fonts/font-Pkmn.css';
 import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.getElementById('root'));

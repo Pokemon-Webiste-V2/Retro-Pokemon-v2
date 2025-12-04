@@ -28,7 +28,6 @@ const Container = styled.div`
     margin: 0;
     border: 2px solid #c7a008ff;
     font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
     background-color: black;
     color: white;
     cursor: pointer;

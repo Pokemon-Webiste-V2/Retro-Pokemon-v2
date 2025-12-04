@@ -5,5 +5,5 @@ import FastForwardIcon from './fast-forward.png';
 export const icons = {
   MuteIcon,
   SpeakerIcon,
-  FastForwardIcon
+  FastForwardIcon,
 };

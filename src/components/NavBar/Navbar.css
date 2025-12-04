@@ -1,6 +1,6 @@
 .navbar-body {
-  background-color:black;
-  border: 2px solid #c7a008ff;
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
   display: flex;
 }
 
@@ -28,44 +28,43 @@
 }
 
 .navbar-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center;
 }
 
 .navbar-list li:hover {
-    background-color: white;
+  background-color: white;
 }
 
 .navbar-list a {
-    color: #acacacff;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
+  color: #acacacff;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
 }
 
 .navbar-login {
-    width: 100%;
+  width: 100%;
   display: flex;
   float: right;
   justify-content: flex-end;
 }
 
 .navbar-login-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar-login-button button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
 }
 
 .navbar-login-button a {
-    color: white;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
 }

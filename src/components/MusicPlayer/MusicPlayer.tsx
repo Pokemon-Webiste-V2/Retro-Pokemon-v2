@@ -13,16 +13,16 @@ export default function MusicPlayer() {
   const playMusic = () => {
     currentMusic.play();
     setIsPlaying(true);
-  }
+  };
 
   const pauseMusic = () => {
     currentMusic.pause();
     setIsPlaying(false);
-  }
+  };
 
   const nextMusic = () => {
     pauseMusic();
-    if(musicCounter + 1 >= music.length) {
+    if (musicCounter + 1 >= music.length) {
       setMusicCounter(0);
       setCurrentMusicName(music[0].title);
       setCurrentMusic(new Audio(music[0].src));
@@ -32,7 +32,7 @@ export default function MusicPlayer() {
       setCurrentMusicName(music[counter].title);
       setCurrentMusic(new Audio(music[counter].src));
     }
-  }
+  };
 
   useEffect(() => {
     // Auto play music on component load - Google Chrome requires user interaction to play audio - We must add a delay or a modal
@@ -42,24 +42,32 @@ export default function MusicPlayer() {
   }, []);
 
   return (
-    <div className='music-player-container'>
-      <div className='music-player-controls'>
-        {isPlaying ? 
-        <button className='music-button' onClick={() => pauseMusic()}>
-          <img className='speaker-icon' alt="speaker" src={icons.MuteIcon} />
-        </button>
-        :
-        <button className='music-button' onClick={() => playMusic()}>
-          <img className='speaker-icon' alt="speaker" src={icons.SpeakerIcon} />
-        </button>
-        }
-        <button className='music-button' onClick={() => nextMusic()}>
-          <img className='speaker-icon' alt="speaker" src={icons.FastForwardIcon} />
+    <div className="music-player-container">
+      <div className="music-player-controls">
+        {isPlaying ? (
+          <button className="music-button" onClick={() => pauseMusic()}>
+            <img className="speaker-icon" alt="speaker" src={icons.MuteIcon} />
+          </button>
+        ) : (
+          <button className="music-button" onClick={() => playMusic()}>
+            <img
+              className="speaker-icon"
+              alt="speaker"
+              src={icons.SpeakerIcon}
+            />
+          </button>
+        )}
+        <button className="music-button" onClick={() => nextMusic()}>
+          <img
+            className="speaker-icon"
+            alt="speaker"
+            src={icons.FastForwardIcon}
+          />
         </button>
       </div>
-      <div className='music-player-info'>
-        <span className='span-content'>Playing</span>
-        <span className='span-content-music'>{currentMusicName}</span>
+      <div className="music-player-info">
+        <span className="span-content">Playing</span>
+        <span className="span-content-music">{currentMusicName}</span>
       </div>
     </div>
   );

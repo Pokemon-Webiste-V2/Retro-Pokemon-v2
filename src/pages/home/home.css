@@ -3,7 +3,6 @@
   justify-content: center;
   color: #c7a008;
   font-size: 40px;
-  font-family: 'Pkmn', Times, serif;
 }
 
 .subtitle {
@@ -11,7 +10,6 @@
   justify-content: center;
   color: #c7a008;
   font-size: 20px;
-  font-family: 'Pkmn', Times, serif;
   padding: 20px 10% 0 10%;
   text-align: center;
 }

@@ -17,7 +17,6 @@ const LoginForm = styled.form`
     color: black;
     padding: 10px 10px 10px 10px;
     font-size: 18px;
-    font-family: 'Pkmn', Times, serif;
   }
 
   input {
@@ -34,7 +33,6 @@ const LoginButton = styled.button`
   border: 2px solid #c7a008;
   border-radius: 5px;
   padding: 15px;
-  font-family: 'Pkmn', Times, serif;
 `;
 
 export default function Login() {

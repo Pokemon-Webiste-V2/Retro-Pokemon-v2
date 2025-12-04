@@ -11,7 +11,6 @@ const Title = styled.h1`
   justify-content: center;
   color: #c7a008;
   font-size: 40px;
-  font-family: 'Pkmn', Times, serif;
 `;
 const CenterBody = styled.div`
   display: flex;

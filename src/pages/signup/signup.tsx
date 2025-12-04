@@ -12,7 +12,6 @@ const Title = styled.h1`
   justify-content: center;
   color: #c7a008;
   font-size: 40px;
-  font-family: 'Pkmn', Times, serif;
 `;
 const CenterBody = styled.div`
   display: flex;
@@ -24,7 +23,7 @@ const LeftBody = styled.div`
   margin: 1%;
   border: 4px solid black;
   width: 75%;
-  height: ;
+  height:;
 
   @media (max-width: 1368px) {
     width: 0%;
