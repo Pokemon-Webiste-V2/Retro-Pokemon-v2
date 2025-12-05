@@ -1,0 +1,27 @@
+.about-me-body {
+  background-color: var(--background-color);
+  height: 100vh;
+  padding: 30px 0 0 0;
+}
+
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 40px;
+}
+
+.about-me-center-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 5%;
+}
+
+.about-me-first-section {
+  width: 30%;
+  font-size: 20px;
+  color: var(--primary-color);
+  line-height: 1.6;
+    margin-right: 1%;
+}

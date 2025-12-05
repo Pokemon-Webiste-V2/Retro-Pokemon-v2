@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import ImageHolder from '../../components/ImageHolder/ImageHolder';
 import Card from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination';
-import { images } from 'assets/images/general';
 import fetcher from '../../backend/fetcher';
 import { Link } from 'react-router-dom';
 
@@ -16,10 +14,6 @@ const Title = styled.h1`
   justify-content: center;
   color: #c7a008;
   font-size: 40px;
-`;
-const CenterBody = styled.div`
-  display: flex;
-  justify-content: center;
 `;
 
 const PokedexBody = styled.div`
@@ -51,14 +45,6 @@ export default function Pokedex() {
   return (
     <Body>
       <Title>Retro Pokedex</Title>
-      <CenterBody>
-        <ImageHolder
-          src={images.Heart}
-          width={'400px'}
-          height={'400px'}
-          alt="Pokemon Intro"
-        ></ImageHolder>
-      </CenterBody>
       {results && (
         <PokedexBody>
           {results?.results?.map((pokemon: any, index: number) => (

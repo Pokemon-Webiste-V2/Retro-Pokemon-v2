@@ -4,7 +4,7 @@ import Home from '../home/home';
 import Pokedex from '../pokedex/pokedex';
 import Login from '../login/login';
 import Games from '../games/games';
-import AboutMe from '../aboutMe/about-me';
+import AboutMe from '../about-me/about-me';
 import Signup from '../signup/signup';
 import Pokemon from '../pokemon/pokemon';
 
