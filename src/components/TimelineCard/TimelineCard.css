@@ -1,0 +1,50 @@
+.timeline-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  margin: 30px;
+  border: 5px solid #c7a008ff;
+  border-radius: 10px;
+  box-shadow: #c7a008ff 10px 7px 20px 0px;
+  background-color: black;
+  filter: brightness(0.9);
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.35s ease-in-out;
+  }
+}
+
+#timeline-card-image {
+  display: flex;
+  img {
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.35s ease-in-out;
+  }
+
+  img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+}
+
+#timeline-card-title {
+  margin: 7px 0 4px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#timeline-card-release-year {
+  margin: 7px 0 4px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}

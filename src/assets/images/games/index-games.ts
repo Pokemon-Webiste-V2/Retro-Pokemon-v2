@@ -9,7 +9,7 @@ import SunMoon from '../games/sun&moon.jpg';
 import SwordShield from '../games/sword&shield.jpg';
 import ScarletViolet from '../games/scarlet&violet.jpg';
 
-export const urls = {
+export const urls = [
   FireRed,
   Silver,
   Sapphire,
@@ -19,4 +19,4 @@ export const urls = {
   SunMoon,
   SwordShield,
   ScarletViolet,
-};
+];
