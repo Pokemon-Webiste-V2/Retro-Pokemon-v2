@@ -1,70 +1,30 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
-import styled from 'styled-components';
+import './Timeline.css';
 import TimelineCard from '../TimelineCard/TimelineCard';
-import gamesData from '../../data/games.json';
-import { urls } from '../../assets/images/games/index-games';
-
-const Container = styled.div`
-  margin: 2% 0 2% 0;
-  height: 100%;
-  width: 4px;
-  background-color: white;
-  border-radius: 40px;
-
-  li {
-    position: relative;
-    color: white;
-
-    &::marker {
-      font-size: 50px;
-      position: absolute;
-    }
-
-    &:hover {
-      color: #c7a008;
-    }
-
-    &:nth-child(odd) {
-      float: left;
-      padding-right: calc(50% + 30px);
-      left: -7px;
-    }
-
-    &:nth-child(even) {
-      float: right;
-      padding-left: calc(50% + 30px);
-      text-align: right;
-      direction: rtl;
-      left: 7px;
-    }
-  }
-`;
-
-for (let i = 0; i < Object.keys(urls).length; i++) {
-  gamesData.games[i].image = [i];
-}
+import { Game } from '../../types/interface';
+import useTimeline from 'backend/hooks/useTimeline';
 
 const Timeline = () => {
-  const TimelineComponent = gamesData?.games?.map(
-    (game: any, index: number) => {
-      return (
+  const games = useTimeline();
+
+  return (
+    <div className="timeline-body">
+      {games.map((game: Game, index: number) => (
         <>
-          <li key={`game-list`}>
-            <TimelineCard
-              key={`game-${index}`}
-              name={game.title}
-              year={game.releaseY}
-              src={game?.image}
-              label={game.title}
+          <li className='timeline-bullet-point'>
+              <TimelineCard
+              title={game.title}
+              info={game.info}
+              gen={game.gen}
+              image={game.image}
+              releaseY={game.releaseY}
+              key={`game-list-${index}`}
             />
           </li>
         </>
-      );
-    },
+      ))}
+    </div>
   );
-
-  return <Container>{TimelineComponent}</Container>;
 };
 
 export default Timeline;

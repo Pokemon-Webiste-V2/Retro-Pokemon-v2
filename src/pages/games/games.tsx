@@ -1,30 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import Timeline from '../../components/Timeline/Timeline';
-
-const Body = styled.div`
-  background-color: black;
-  padding: 30px 0 0 0;
-`;
-const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  color: #c7a008;
-  font-size: 40px;
-`;
-const CenterBody = styled.div`
-  background-color: black;
-  display: flex;
-  justify-content: center;
-`;
+import './games.css';
 
 export default function Games() {
   return (
-    <Body>
-      <Title>Timetable of the Games</Title>
-      <CenterBody>
+    <div className="games-body">
+      <h1 id="games-title">Timetable of the Games</h1>
+      <div className="games-main-body">
         <Timeline />
-      </CenterBody>
-    </Body>
+      </div>
+    </div>
   );
 }
