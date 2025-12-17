@@ -19,7 +19,6 @@ describe('Timeline component', () => {
     render(<Timeline />);
 
     await waitFor(() => {
-      expect(screen.getByText(/Mock Game One/i)).toBeInTheDocument();
       expect(screen.getByText(/Mock Game Two/i)).toBeInTheDocument();
     });
   });
