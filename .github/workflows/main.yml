@@ -19,4 +19,4 @@ jobs:
       - name: install
         run: npm install
       - name: jest
-        run: npm test -- coverage
+        run: npm test 
