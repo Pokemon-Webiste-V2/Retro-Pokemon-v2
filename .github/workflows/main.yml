@@ -21,7 +21,7 @@ jobs:
       - name: install
         run: npm install
       - name: jest
-        run: npm test 
+        run: npm test
       - name: generate report
         id: generate-coverage-report
-        uses: ./
+        uses: ./coverage/coverage-final.json
