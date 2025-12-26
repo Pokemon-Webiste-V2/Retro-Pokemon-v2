@@ -20,7 +20,8 @@
     "prettier:write": "prettier --write .",
     "eslint:check": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "ci:prettier": "prettier --write .",
-    "ci:eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
+    "ci:eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "ci:test": "react-scripts test --coverage --watchAll=false"
   },
   "eslintConfig": {
     "extends": [
