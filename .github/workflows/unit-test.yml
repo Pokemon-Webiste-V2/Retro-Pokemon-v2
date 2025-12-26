@@ -1,4 +1,6 @@
 name: unit-test-run
+permissions:
+  contents: read
 on:
   push:
     branches: ['main', 'dev']
@@ -36,6 +38,6 @@ jobs:
         with:
           annotations: coverage
           package-manager: npm
-          test-script: npm ci:test
+          test-script: npm run ci:test
           icons: emoji
       
